@@ -87,27 +87,33 @@ h1, h2, h3{
     color: var(--branco) ;
     flex: 2;
 }
+
 .cartaz-principal h1{
     font-size: 132px;
     max-width: 9ch;
 }
+
 .cartaz-lateral{
     background: var(--fita);
+    display: flex;
     flex: 1;
     flex-direction: column;
     justify-content: space-between;
     gap: 32px;
     align-items: flex-start
+
 }
+
 .cartaz-lateral p{
     font-size: 22px;
     font-weight: 600;
     line-height: 1.3;
 }
+
 .botao{
     background: var(--tinta);
     color:var(--branco) ;
-    font-size: 700;
+    font-weight: 700;
     text-decoration: none;
     padding: 16px 28px;
     border: none;
@@ -119,4 +125,68 @@ h1, h2, h3{
 .botao:hover{
     background: var(--caixa-dagua);
 
+}
+
+.secao{
+    margin-top: 96px;
+
+}
+
+.titulo-secao{
+    font-size: 64px;
+    margin-bottom: 32px;
+
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.card{
+    background: #FFFFFF;
+    border: 3px solid var(--tinta);
+    flex: 1 1 340px;
+
+    h3{
+        font-size: 36px;
+        margin-bottom: 12px;
+    }
+}
+
+.card .foto{
+    height: 170px;
+
+}
+
+.foto{
+    background: var(--concreto-escuro);
+}
+
+.foto-azul{
+    background: var(--caixa-dagua);
+}
+
+.foto-amarela{
+    background: var(--fita);
+}
+
+.foto-tinta{
+    background: var(--tinta);
+}
+
+.card-texto{
+    padding: 24px;
+
+}
+
+.card-info{
+    margin-top: 20px;
+    padding-top: 16px;
+    border: 2px solid var(--concreto-escuro);
+    width: 600;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
 }
